@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трактир Пушкин</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+    <a href="#top">
+      <img class="header__logo" src="./Stores/logo.png" alt="Logo Uber Eats">
+    </a>
+    <nav class="header__nav" aria-label="Main navigation">
+    <button class="header__login" type="button">Войти</button>
+    <a class="header__basket-icon" href="/"><img class="basket" src="./Stores/basket.png" alt="basket">
+    </a>
+  </nav>
+    </div>
+</header>
+<main>            
+    <section class="banner">
+        <div class="banner__image">
+            <img class="banner__img" src="./Stores/name.png" alt="banner">
+        </div>
+    </section>
+    
+    <nav class="menu-nav">
+        <ul class="menu-nav__list">
+            <li><a class="menu-nav__link" href="#">Закуски</a></li>
+            <li><a class="menu-nav__link" href="#">Салаты</a></li>
+            <li><a class="menu-nav__link" href="#">Супы</a></li>
+            <li><a class="menu-nav__link" href="#">Горячие блюда</a></li>
+            <li><a class="menu-nav__link" href="#">Гарниры</a></li>
+            <li><a class="menu-nav__link" href="#">Десерты</a></li>
+        </ul>
+    </nav>
+    
+    <section class="menu">
+        <div class="menu__container">
+            <h2 class="menu__header">Закуски</h2>
+            <div class="menu__cards">
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/селедка.png" alt="Сельдь на бородинском хлебе">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Сельдь на бородинском хлебе</h3>
+                        <p class="dish-card__composition">С яйцом и огурцом</p>
+                        <p class="dish-card__price">240 руб</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/соленья.png" alt="Соленья ассорти">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Соленья ассорти</h3>
+                        <p class="dish-card__composition">Огурцы, помидоры, капуста</p>
+                        <p class="dish-card__price">320 руб</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/грибы.png" alt="Грибы маринованные">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Грибы маринованные</h3>
+                        <p class="dish-card__composition">С луком и специями</p>
+                        <p class="dish-card__price">300 руб</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/сало.png" alt="Сало домашнее с горчицей">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Сало домашнее с горчицей</h3>
+                        <p class="dish-card__composition">С ржаным хлебом</p>
+                        <p class="dish-card__price">320 руб</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/рыба.png" alt="Малосольная семга">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Малосольная семга</h3>
+                        <p class="dish-card__composition">С лимоном и оливками</p>
+                        <p class="dish-card__price">390 руб</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="dish-card">
+                    <div class="dish-card__image">
+                        <img class="dish-card__img" src="./Stores/язык.png" alt="Язык говяжий с хреном">
+                    </div>
+                    <div class="dish-card__info">
+                        <h3 class="dish-card__title">Язык говяжий с хреном</h3>
+                        <p class="dish-card__composition">С соусом и зеленью</p>
+                        <p class="dish-card__price">350 руб</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+                </main>
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer__logo">
+                <img src="./Stores/white-logo.png" alt="Uber Eats" class="footer__logo-img">
+            </div>
+            
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <select name="language-switch" id="lang" class="footer__language-select">
+                            <option value="ru">русский</option>
+                            <option value="en">english</option>
+                            <option value="de">deutsch</option>
+                        </select>
+                    </div>
+                    <div class="footer__social">
+                        <img class="footer__social-img" src="./Stores/social.png" alt="Social media">
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__section-title">О UberEats</h4>
+                    <a href="#" class="footer__link">Станете партнёром по доставке</a>
+                    <a href="#" class="footer__link">Станете партнёром рестораном</a>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__section-title">Все города</h4>
+                    <a href="#" class="footer__link">Все города</a>
+                    <a href="#" class="footer__link">Цены</a>
+                    <a href="#" class="footer__link">Помощь</a>
+                    <a href="#" class="footer__link">FAQs</a>
+                </div>
+            </div>
+            
+            <div class="footer__apps">
+                <div class="footer__apps-container">
+                    <button class="footer__app-button-store">
+                        <img src="Stores\log app store.png" alt="логотип app store">
+                    </button>
+                    <button class="footer__app-button-google">
+                        <img src="Stores/en_badge_web_generic-cf6dad406f.png" alt="логотип google store">
+                    </button>
+                </div>
+            </div>
+            
+             <div class="footer__bottom">
+                <p class="footer__copyright">© 2017 Uber Technologies Inc.</p>
+                <div class="footer__legal"> 
+                    <a href="#" class="footer__legal-link">Обработка персональных данных</a>
+                    </div>
+                    <div class="footer__legal-agreement">
+                    <a href="#" class="footer__legal-link">Пользовательское соглашение</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </body>
+</html>

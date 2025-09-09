@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #262626;
+  --color-secondary: #626262;
+  --color-background: white;
+  --color-text: #1D1D1D;
+  --color-placeholder: #ccc;
+  --font-family: 'Roboto', sans-serif;
+  --font-size-sm: 10px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
+  --spacing-xs: 4px;
+  --spacing-sm: 10px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 40px;
+}
+
+
+
+
+

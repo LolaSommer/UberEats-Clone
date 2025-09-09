@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UberEats</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+    <a href="#top">
+      <img class="header__logo" src="./Stores/logo.png" alt= "Логотип Uber Eats">
+    </a>
+    <nav class="header__nav" aria-label="Main navigation">
+    <button class="header__login" type="button">Войти</button>
+    <a class="header__basket-icon" href="/"><img class="basket" src="./Stores/basket.png" alt="Корзина с заказом">
+    </a>
+  </nav>
+    </div>
+</header>
+
+                <main>
+                <section class="restaurants">
+                    <div class="page-container">
+                         <form class="search-form" action="#" method="get">
+            <label for="search-input-main" class="visually-hidden">Поиск по ресторанам и кухням
+            </label>
+            <div class="search">
+                <input class="search__input" type="search" name="search-input-main"
+                    id="search-input-main" placeholder="Поиск по ресторанам и кухням">
+                <button class="search__button" type="submit" aria-label="Выполнить поиск">
+                </button>
+            </div>
+        </form>
+                        <h2 class="restaurants__title">Рестораны в Москве</h2>
+                        <div class="restaurants__list">
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/macdonalds.png" alt="Макдональдс Газетный">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">Макдональдс Газетный</div>
+                            <div class="restaurant-card__type">₽₽ • Бургеры</div>
+                            <div class="restaurant-card__time">25 - 35 мин</div>
+                          </div>
+                        </a>
+
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/DimSum.png" alt="DimSum&СО-ЦДМ">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">DimSum&СО-ЦДМ</div>
+                            <div class="restaurant-card__type">₽₽ • Японская • Китайская</div>
+                            <div class="restaurant-card__time">40 - 50 мин</div>
+                          </div>
+                                                 </a>
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/DvizOK.png" alt="ДвижОК">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">ДвижОК</div>
+                            <div class="restaurant-card__type">₽₽ •Американская •Европейская</div>
+                            <div class="restaurant-card__time">35 - 45 мин</div>
+                            </div>
+                        </a>
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/NYA.png" alt="НЯ-NHA">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">НЯ-NHA</div>
+                            <div class="restaurant-card__type">₽₽ • Вьетнамская</div>
+                            <div class="restaurant-card__time">30-40 мин</div>
+                            </div>
+                        </a>
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/Dzy.png" alt="Точка Дзы-Цветной">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">Точка Дзы-Цветной</div>
+                            <div class="restaurant-card__type">₽₽ • Вьетнамская</div>
+                            <div class="restaurant-card__time">40-50 мин</div>
+                            </div>
+                        </a>
+                        <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/sinabon.png" alt="Cinnabon">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">Cinnabon</div>
+                            <div class="restaurant-card__type">₽₽ • Выпечка • Десерты </div>
+                            <div class="restaurant-card__time">25-35 мин</div>
+                            </div>
+                        </a>
+                         <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/Pizzelove.png" alt="PIZZELOVE">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">PIZZELOVE</div>
+                            <div class="restaurant-card__type">₽₽ • Пицца</div>
+                            <div class="restaurant-card__time">15-25 мин</div>
+                            </div>
+                        </a>
+                         <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/ZU.png" alt="Zю кафе-Тверская">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">Zю кафе-Тверская</div>
+                            <div class="restaurant-card__type">₽₽ • Японская</div>
+                            <div class="restaurant-card__time">25-35 мин</div>
+                            </div>
+                        </a>
+                         <a href="restaurant.html" class="restaurant-card">
+                            <div class="restaurant-card__image">
+                                <img class="fix" src="./Stores/BARBQ.png" alt="Bar BQ Cafe-Манежная">
+                            </div>
+                            <div class="restaurant-card__info">
+                            <div class="restaurant-card__name">Bar BQ Cafe-Манежная</div>
+                            <div class="restaurant-card__type">₽₽ • •Европейская</div>
+                            <div class="restaurant-card__time">30-40 мин</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </section>
+                </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer__logo">
+                <img src="./Stores/white-logo.png" alt=" Логотип Uber Eats" class="footer__logo-img">
+            </div>
+            
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <select name="language-switch" id="lang" class="footer__language-select">
+                            <option value="ru">русский</option>
+                            <option value="en">english</option>
+                            <option value="de">deutsch</option>
+                        </select>
+                    </div>
+                    <div class="footer__social">
+                        <img class="footer__social-img" src="./Stores/social.png" alt="Social media">
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__section-title">О UberEats</h4>
+                    <a href="#" class="footer__link">Станете партнёром по доставке</a>
+                    <a href="#" class="footer__link">Станете партнёром рестораном</a>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__section-title">Все города</h4>
+                    <a href="#" class="footer__link">Все города</a>
+                    <a href="#" class="footer__link">Цены</a>
+                    <a href="#" class="footer__link">Помощь</a>
+                    <a href="#" class="footer__link">FAQs</a>
+                </div>
+            </div>
+            
+            <div class="footer__apps">
+                <div class="footer__apps-container">
+                    <button class="footer__app-button-store">
+                        <img src="Stores\log app store.png" alt="логотип app store">
+                    </button>
+                    <button class="footer__app-button-google">
+                        <img src="Stores/en_badge_web_generic-cf6dad406f.png" alt="логотип google store">
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2017 Uber Technologies Inc.</p>
+                <div class="footer__legal"> 
+                    <a href="#" class="footer__legal-link">Обработка персональных данных</a>
+                    </div>
+                    <div class="footer__legal-agreement">
+                    <a href="#" class="footer__legal-link">Пользовательское соглашение</a>
+                    </div>
+                
+            </div>
+        </div>
+    </footer>
+    </div>
+    </body>
+</html>
