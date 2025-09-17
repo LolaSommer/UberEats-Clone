@@ -19,6 +19,77 @@
   --spacing-xxl: 40px;
 }
 
+/* 1. Убираем плавные скроллы */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; /* вместо smooth */
+  }
+}
+
+/* 2. Вырубаем анимации и переходы */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* 3. Фиксим кнопки и hover-эффекты */
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* 4. Слайдеры/карусели — отключаем автоплей */
+@media (prefers-reduced-motion: reduce) {
+  .slider {
+    animation-play-state: paused !important;
+  }
+}
+
+/* 5. Параллаксы/фоновые движения */
+@media (prefers-reduced-motion: reduce) {
+  .parallax {
+    background-attachment: scroll; /* убираем эффект */
+    transform: none !important;
+  }
+}
+.visually-hidden {
+  position: absolute !important;
+  inline-size: 1px !important;
+  block-size: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+}
+
+.visually-hidden-focusable:focus,
+.visually-hidden-focusable:focus-visible {
+  position: static;         
+  left: auto; top: auto;
+  inline-size: auto; block-size: auto;
+  padding: 0.5em 0.75em;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  outline: 2px solid #000;
+  outline-offset: 2px;
+  z-index: 1000;            
+}
 
 
 
