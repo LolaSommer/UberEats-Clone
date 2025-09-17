@@ -27,11 +27,19 @@
   margin-left: -30px;
   cursor: pointer;
 }
-.visually-hidden {
-  visibility: hidden;
-  display: none;
-  opacity: 0;
+.search__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-placeholder);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-sm) 0;
 }
+.search__input:focus-visible {
+  border-bottom-color: #007765; 
+}
+
+.header__logo { height: 15px; width: auto; display: block; }
+.header__logo-link { display: inline-flex; align-items: center; }
 @media (max-width: 600px) {
   .search {
     padding-top: 1.5rem;

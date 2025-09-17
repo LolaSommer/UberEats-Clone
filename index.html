@@ -16,28 +16,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <a class="visually-hidden-focusable" href="#main">Skip to content</a>
   <header class="header">
     <div class="header__container">
-    <a href="#top">
-      <img class="header__logo" src="./Stores/logo.png" alt= "Логотип Uber Eats">
-    </a>
-    <nav class="header__nav" aria-label="Main navigation">
+    <a class="header__logo-link" href="/" aria-label="Uber Eats — главная">
+  <img class="header__logo" src="./Stores/logo.png" alt="" width="100" height="24" aria-hidden="true">
+ </a>
+    <nav class="header__nav" aria-label="Действия пользователя">
     <button class="header__login" type="button">Войти</button>
-    <a class="header__basket-icon" href="/"><img class="basket" src="./Stores/basket.png" alt="Корзина с заказом">
+    <a class="header__basket-icon" href="/cart" aria-label="Корзина"aria-hidden="true"><img class="basket" src="./Stores/basket.png" alt="Корзина с заказом" aria-hidden="true">
     </a>
   </nav>
     </div>
 </header>
-<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
                 <main id="main">
                 <section class="restaurants">
                     <div class="page-container">
-                         <form class="search-form" action="#" method="get">
+                         <form class="search-form" role="search" action="#" method="get" aria-label="Поиск по ресторанам и кухням">
             <label for="search-input-main" class="visually-hidden">Поиск по ресторанам и кухням
             </label>
             <div class="search">
-                <input class="search__input" type="search" name="search-input-main"
+                <input class="search__input" type="search" name="q" autocomplete="off"
                     id="search-input-main" placeholder="Поиск по ресторанам и кухням">
                 <button class="search__button" type="submit" aria-label="Выполнить поиск">
                 </button>
