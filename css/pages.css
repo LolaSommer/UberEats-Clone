@@ -3,24 +3,25 @@
     margin: 0 auto;
     padding:0 16px;
 }
+/*Список ресоторанов*/
 .restaurants__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg); 
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
     max-width: 1280px;
     align-items: center;
-    justify-content: center;
     margin: 0 auto;
+    list-style: none;
+    
 }
-
-.restaurants__title {
+/*Рестораны в Москве*/
+.restaurants__title {       
     font-family: var(--font-family);
     font-size: var(--font-size-xl);
     font-weight: none;
     margin: 8px 0 24px;   
     text-align: left;
 }
-
 .restaurant-card {
     display: flex;
     flex-direction: column;
@@ -30,10 +31,13 @@
     padding-bottom: 60px;
 }
 
+.restaurants__item {
+  height: 100%;
+}
+
 .restaurant-card:hover {
     transform: translateY(-4px);
 }
-
 .restaurant-card__info {
     padding: var(--spacing-sm);
     display: flex;
@@ -42,7 +46,6 @@
     gap: 5px;   
     padding-right: var(--spacing-xxl);
 }
-
 .restaurant-card__name,
 .restaurant-card__type,
 .restaurant-card__time {
