@@ -6,10 +6,10 @@
 /*Список ресоторанов*/
 .restaurants__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--spacing-lg);
     max-width: 1280px;
-    align-items: center;
+    padding:0;
     margin: 0 auto;
     list-style: none;
     
@@ -30,7 +30,12 @@
     align-items: center;
     padding-bottom: 60px;
 }
-
+.restaurant-card__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .restaurants__item {
   height: 100%;
 }
@@ -55,7 +60,23 @@
     font-weight: var(--font-weight-normal);
     color: var(--color-text);
 }
-
+.restaurant-card:focus-visible,
+.menu-nav__link:focus-visible {
+  outline: 2px solid #0a84ff;
+  outline-offset: 3px;
+}
+.restaurant-card__image {
+  height: clamp(200px, 28vw, 256px); 
+  overflow: hidden;
+  background: #f6f6f6;
+}
+.restaurant-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position: center;
+  display: block;
+}
 .banner {
     width: 100%;
     margin-bottom: var(--spacing-lg);
@@ -105,6 +126,11 @@
 .menu-nav__link:hover {
     color: #000;
 }
+.menu-nav__link:hover,
+.menu-nav__link:focus-visible {
+  color: var(--color-text);
+  text-decoration: underline;
+}
 
 .menu {
     padding: 0 var(--spacing-lg);
@@ -128,45 +154,40 @@
 }
 
 .dish-card {
-    display: flex;
-    text-decoration: none;
-    color: inherit;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-    background: var(--color-background);
-    height: 150px; 
-    padding-bottom: 70px;
-}
-
-.dish-card:hover {
-    transform: translateY(-4px);
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  text-decoration: none;
+   color: inherit;
 }
 
 .dish-card__image {
-    flex: 1; 
-    overflow: hidden;
-    min-width: 0; 
+  position: relative;
+  height: 100%;          
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.dish-card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
+.dish-card__image img {
+  position: absolute;    /* заполняем контейнер целиком */
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* кадрируем без искажений */
 }
-
 .dish-card:hover .dish-card__img {
     transform: scale(1.05);
 }
 
 .dish-card__info {
-    flex: 2; 
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
 }
 
 .dish-card__title {
