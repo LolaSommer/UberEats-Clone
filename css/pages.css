@@ -85,7 +85,7 @@
 .banner__image {
     background-image: url("../Stores/photo.png");
     background-size: cover;
-    width: 100%;
+    width:auto;
     height: 500px;
     display: flex;
     align-items: center;
