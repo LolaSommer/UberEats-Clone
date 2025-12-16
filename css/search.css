@@ -19,7 +19,7 @@
   font-family: var(--font-family);
 }
 .search__button {
-  background: url("../Stores/search-icon.png") no-repeat center;
+  background: inherit;
   background-size: contain;
   border: none;
   width: 24px;

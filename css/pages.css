@@ -207,6 +207,19 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
 }
+.cart__counter{
+ position: absolute;
+  top:20px;
+  background:green;
+  color: #fff;
+  font-size:14px;
+  font-weight:bold;
+  border-radius: 50%;
+  padding: 4px 4px;
+  min-width:1.3rem;
+  text-align: center;
+  line-height: 1;
+}
 @media (max-width:480px) {
     .restaurants__list {
         grid-template-columns: 1fr;

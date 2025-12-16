@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +24,11 @@
     </a>
     <nav class="header__nav" aria-label="Main navigation">
     <button class="header__login" type="button">Войти</button>
-    <a class="header__basket-icon" href="/"><img class="basket" src="./Stores/basket.png" alt="basket">
+     <div class="header__cart-group">
+    <a class="header__basket-icon" href="/cart" aria-label="Корзина"aria-hidden="true"><img class="basket" src="./Stores/basket.png" alt="Корзина с заказом" aria-hidden="true">
     </a>
+    <span class="cart__counter" aria-live="polite" aria-atomic="true">0</span>
+    </div>
   </nav>
     </div>
 </header>
@@ -176,6 +180,69 @@
             </div>
         </div>
     </footer>
+    <div class="modal-open modal__cart" aria-hidden="true">
+      <div class="modal__window" role="dialog" aria-modal="true" aria-labelledby="cart__modal-title">
+      <button class="modal__close" aria-label="close">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</button>  
+<div class="modal__header">
+  <h2 class="cart__modal-title" id="cart__modal-title">Трактир "Пушкин"</h2>
+</div>
+ <div class="modal__empty hidden">
+            <img src="./Stores/basket.png" alt="Корзина с заказом" loading="lazy">
+           <p class="modal__sad">Добавь товары в корзину из одного ресторана,чтобы увидеть корзину</p> 
+           </div>
+           <div class="modal__summary">
+            <div class="modal__number">0 items</div>
+        <div class="modal__total">0.00</div>
+        </div>
+<div class="modal__items">
+             <!-- сюда JS вставит товары -->
+          </div>
+           <div class="modal__bottom">
+          <div class="modal__summary">
+            <div class="modal__number">Сумма</div>
+        <div class="modal__total-price">0.00</div>
+        </div>
+        <div class="modal__order">
+       <button class="modal__checkout">Заказать</button>
+        </div>
+        </div>
+      </div>
     </div>
+     <div class="modal-open modal__info hidden" aria-hidden="true">
+                    <div class="cartModal__overlay"></div>
+                    <div class="cartModal__wrapper">
+                    <div class="cartModal__line">
+                   <button class="cartModal__close" aria-label="close">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</button>  
+                  </div>
+        <div class="cartModal__window" role="dialog" aria-modal="true" aria-labelledby="modal__ingredients-title">
+
+                  <div class="cartModal__system">
+                    <div class="cartModal__colls-img">
+                        <img class="dish-card__img" src="./Stores/язык.png" alt="Язык говяжий с хреном">
+                    </div>
+                    <div class="cartModal__colls-ingredients">
+                      <h2 id="cartModal__ingredients-title" class="ingredients__title">Соленья ассорти</h2>
+                      <p class="cartModal__ingredients-text">Состав:оугрцы, помидоры, капуста.</p>
+                         </div>
+                         
+                  </div>
+                  <div class="cartModal__order">
+                           <button type="button" class="cartModal__order-btn" aria-label="Добавить товар в корзину">Заказать</button>
+                           </div>
+                  </div>
+                 
+                 </div>
+                  </div>
+     <script src="main.js"></script>
     </body>
 </html>

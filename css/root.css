@@ -19,6 +19,7 @@
   --spacing-xxl: 40px;
 }
 
+
 /* 1. Убираем плавные скроллы */
 @media (prefers-reduced-motion: reduce) {
   html {
