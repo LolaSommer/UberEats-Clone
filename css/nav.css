@@ -28,6 +28,7 @@
   cursor: pointer;
   font-weight: bold;
   border: 1px solid #ccc;
+  margin-block: 10px;
 }
 .header__login:hover {
   background-color: #f0f0f0;
