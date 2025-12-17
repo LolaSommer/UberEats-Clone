@@ -170,7 +170,7 @@
             </div>
             
              <div class="footer__bottom">
-                <p class="footer__copyright">© 2017 Uber Technologies Inc.</p>
+                <p class="footer__copyright">© 2025 Uber Technologies Inc.</p>
                 <div class="footer__legal"> 
                     <a href="#" class="footer__legal-link">Обработка персональных данных</a>
                     </div>
@@ -192,8 +192,8 @@
   <h2 class="cart__modal-title" id="cart__modal-title">Трактир "Пушкин"</h2>
 </div>
  <div class="modal__empty hidden">
-            <img src="./Stores/basket.png" alt="Корзина с заказом" loading="lazy">
-           <p class="modal__sad">Добавь товары в корзину из одного ресторана,чтобы увидеть корзину</p> 
+            <img class="modal__empty-cart" src="./Stores/basket.png" alt="Корзина с заказом" loading="lazy">
+           <p class="modal__sad">Добавь товары в корзину из одного ресторана,чтобы увидеть их</p> 
            </div>
            <div class="modal__summary">
             <div class="modal__number">0 items</div>
@@ -228,7 +228,7 @@
 
                   <div class="cartModal__system">
                     <div class="cartModal__colls-img">
-                        <img class="dish-card__img" src="./Stores/язык.png" alt="Язык говяжий с хреном">
+                        <img class="cartModal-card__img" src="./Stores/язык.png" alt="Язык говяжий с хреном">
                     </div>
                     <div class="cartModal__colls-ingredients">
                       <h2 id="cartModal__ingredients-title" class="ingredients__title">Соленья ассорти</h2>
@@ -243,6 +243,24 @@
                  
                  </div>
                   </div>
+                   <div class="modal-open thankyou__modal hidden" aria-hidden="true">
+                 <div class="thankyou__overlay"></div>
+                 <div class="thankyou__line">
+                    <button class="thankyou__close" aria-label="close">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</button>  
+                 <div class="thankyou__window">
+                <h2 class="thankyou__title">Спасибо</h2>
+                <div class="thankyou__price"></div>
+                <div class="thankyou__button">
+                <button class="thankyou__btn">ОК</button>
+                </div>
+                </div>
+                </div>
+                </div>
      <script src="main.js"></script>
     </body>
 </html>
